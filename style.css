@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/download\ \(2\).jpg);
+    width: 98%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+   padding: 10px;
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.todo-app{
+   width: 100%;
+    background-color: white;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+.todo-app h1{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(9, 63, 117);
+}
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 10px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+.row input{
+    outline: none;
+    border: none;
+    background-color: rgb(216, 240, 255);
+    padding: 10px;
+    flex:1;
+    border-radius: 15px;
+}
+.row button{
+    border: none;
+    outline: none;
+    background-color: rgb(27, 125, 174);
+    color: white;
+    padding: 9px;
+    border-radius: 17px; 
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 42px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    background-image: url(img/png-transparent-circle-white-circle-white-monochrome-black-thumbnail-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+.checked::before{
+    background-image: url(img/download-removebg-preview.png);
+
+
+}
+ 
+ul li span{
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+   padding-top: 5px;
+    width: 30px;
+    height: 30px;
+  text-align: center;
+    color: rgb(12, 58, 81);
+    transition: 0.3s all ease;
+    top: 8px;
+}
+ul li span:hover{
+    background-color: rgb(216, 240, 255);
+}
